@@ -80,6 +80,7 @@ main {
 }
 
 /* скритий h1 на portfolio*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;
