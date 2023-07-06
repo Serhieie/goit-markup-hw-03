@@ -24,21 +24,19 @@
 /* загальні вимоги до тегів */
 .container {
   width: 1158px;
-  padding-left: 0 155px;
+  padding-left: 0 15px;
   padding-right: 0 15px;
-  margin-left: 0;
-  margin-right: 0;
+  margin: 0 auto;
 }
 
 .section-a,
-.section-c,
+.section-b,
 .section-d {
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
-.section-b {
-  padding-top: 120px;
+.section-c {
+  padding-bottom: 120px;
 }
 
 h1,
@@ -297,7 +295,6 @@ header .container {
 
 .team-cards {
   max-width: 264px;
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-cards-list {
@@ -306,13 +303,15 @@ header .container {
   justify-content: center;
 }
 
-.team_section li {
+.team-cards-items {
   background: var(--white);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  flex-basis: calc((100% - 72px) / 4);
+  max-width: 264px;
 }
 
 .team-cards-text {
@@ -401,8 +400,9 @@ header .container {
 }
 
 .images_section_portfolio {
-  padding: 96px 120px;
+  padding: 96px 0 120px 0;
   width: 1158px;
+  margin: 0 auto;
 }
 
 .images_section_portfolio p {
