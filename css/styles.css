@@ -24,8 +24,7 @@
 /* загальні вимоги до тегів */
 .container {
   width: 1158px;
-  padding-left: 0 15px;
-  padding-right: 0 15px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -164,16 +163,13 @@ header .container {
   flex-wrap: wrap;
 }
 
-.nav-list-items {
-  padding: 24px 0;
-}
-
 .nav-link {
   color: var(--dark);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -304,13 +300,13 @@ header .container {
 }
 
 .team-cards-items {
+  width: calc((100% - 72px) / 4);
   background: var(--white);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  flex-basis: calc((100% - 72px) / 4);
   max-width: 264px;
 }
 
