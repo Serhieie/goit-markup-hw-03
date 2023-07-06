@@ -28,9 +28,7 @@
   margin: 0 auto;
 }
 
-.section-a,
-.section-b,
-.section-d {
+.section {
   padding: 120px 0;
 }
 
@@ -129,7 +127,6 @@ main {
 
 header .container {
   display: flex;
-  flex-wrap: wrap;
 }
 
 /* Навігація включаючи логотип */
@@ -340,6 +337,7 @@ header .container {
 .logo-bottom {
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 0;
 }
 
 /* кнопки з portfolio.html */
@@ -399,8 +397,6 @@ header .container {
 
 .images_section_portfolio {
   padding: 96px 0 120px 0;
-  width: 1158px;
-  margin: 0 auto;
 }
 
 .images_section_portfolio p {
