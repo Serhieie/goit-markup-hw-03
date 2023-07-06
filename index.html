@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 3</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,32 +15,32 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <div class="container">
           <nav class="header-navigation-section">
             <a href="./index.html" class="logo link">
               Web<span class="web_logo">Studio</span>
             </a>
             <ul class="nav-list list">
-              <li>
+              <li class="nav-list-items">
                 <a href="./index.html" class="nav-link link">Studio</a>
               </li>
-              <li>
+              <li class="nav-list-items">
                 <a href="./portfolio.html" class="nav-link link">Portfolio</a>
               </li>
-              <li>
+              <li class="nav-list-items">
                 <a href="" class="nav-link link">Contacts</a>
               </li>
             </ul>
           </nav>
           <address class="header-navigation-address">
             <ul class="address-list list">
-              <li>
+              <li class="address-list-items">
                 <a href="mailto:info@devstudio.com" class="connect link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
+              <li class="address-list-items">
                 <a href="tel:+110001111111" class="connect link"
                   >+11 (000) 111-11-11</a
                 >
@@ -50,38 +50,38 @@
         </div>
       </header>
       <main>
-        <section class="hero section-1">
+        <section class="hero section-a">
           <div class="container hero-container">
             <h1 class="h-hero">Effective Solutions for Your Business</h1>
             <button type="button" class="main_button">Order Service</button>
           </div>
         </section>
-        <section class="section-2">
+        <section class="section-b">
           <div class="container">
             <h2 class="all-two h-hero-hiden">Description</h2>
             <ul class="list discription-list">
-              <li>
+              <li class="discription-list-items">
                 <h3 class="desc-three">Strategy</h3>
                 <p class="desc-p">
                   Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
               </li>
-              <li>
+              <li class="discription-list-items">
                 <h3 class="desc-three">Punctuality</h3>
                 <p class="desc-p">
                   Bring the key message to the brand's audience for the best
                   price within the shortest possible time.
                 </p>
               </li>
-              <li>
+              <li class="discription-list-items">
                 <h3 class="desc-three">Diligence</h3>
                 <p class="desc-p">
                   Research and confirm brands that present the strongest digital
                   growth opportunities and minimize risk.
                 </p>
               </li>
-              <li>
+              <li class="discription-list-items">
                 <h3 class="desc-three">Technologies</h3>
                 <p class="desc-p">
                   Design practice focused on digital experiences. We bring forth
@@ -91,11 +91,11 @@
             </ul>
           </div>
         </section>
-        <section class="section-3">
+        <section class="section-c">
           <div class="container">
             <h2 class="all-two">What are we doing</h2>
             <ul class="list discription-list-img">
-              <li>
+              <li class="discription-list-img-list">
                 <img
                   src="./images/what-1.jpg"
                   alt="monitor"
@@ -103,7 +103,7 @@
                   height="300"
                 />
               </li>
-              <li>
+              <li class="discription-list-img-list">
                 <img
                   src="./images/what-2.jpg"
                   alt="multiple-screen"
@@ -111,7 +111,7 @@
                   height="300"
                 />
               </li>
-              <li>
+              <li class="discription-list-img-list">
                 <img
                   src="./images/what-3.jpg"
                   alt="mobile-phone"
@@ -122,11 +122,11 @@
             </ul>
           </div>
         </section>
-        <section class="team_section section-4">
+        <section class="team_section section-d">
           <div class="container">
             <h2 class="all-two">Our Team</h2>
             <ul class="list team-cards-list">
-              <li class="team-cards">
+              <li class="team-cards-items">
                 <img
                   src="./images/product-designer.jpg"
                   alt="Designer"
@@ -138,7 +138,7 @@
                   <p class="desc-p">Product Designer</p>
                 </div>
               </li>
-              <li class="team-cards">
+              <li class="team-cards-items">
                 <img
                   src="./images/front-end-dev.jpg"
                   alt="Frontend developer"
@@ -150,7 +150,7 @@
                   <p class="desc-p">Frontend Developer</p>
                 </div>
               </li>
-              <li class="team-cards">
+              <li class="team-cards-items">
                 <img
                   src="./images/marketologist.jpg"
                   alt="Marketologist"
@@ -162,7 +162,7 @@
                   <p class="desc-p">Marketing</p>
                 </div>
               </li>
-              <li class="team-cards">
+              <li class="team-cards-items">
                 <img
                   src="./images/designer.jpg"
                   alt="designer"
@@ -180,7 +180,7 @@
       </main>
       <footer class="footer-class">
         <div class="container">
-          <a href="./index.html" class="logo link"
+          <a href="./index.html" class="logo link logo-bottom"
             >Web<span class="web_logo white_logo">Studio</span></a
           >
           <p class="footer-p">

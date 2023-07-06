@@ -23,21 +23,21 @@
 
 /* загальні вимоги до тегів */
 .container {
-  max-width: 100%;
-  padding-left: 152px;
-  padding-right: 152px;
+  width: 1158px;
+  padding-left: 0 155px;
+  padding-right: 0 15px;
   margin-left: 0;
   margin-right: 0;
 }
 
-.section-1,
-.section-3,
-.section-4 {
+.section-a,
+.section-c,
+.section-d {
   padding-bottom: 120px;
   padding-top: 120px;
 }
 
-.section-2 {
+.section-b {
   padding-top: 120px;
 }
 
@@ -83,7 +83,7 @@ main {
 }
 
 /* скритий h1 на portfolio*/
-.h-hero-hiden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -122,11 +122,16 @@ main {
 }
 
 /* Область хедера */
-header .container {
+
+.header {
   font-family: "Roboto", sans-serif;
-  display: flex;
   border-bottom: 1px solid var(--accent);
   background: var(--white);
+}
+
+header .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Навігація включаючи логотип */
@@ -135,8 +140,7 @@ header .container {
   background-color: var(--white);
   font-family: "Roboto", sans-serif;
   display: flex;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  align-items: center;
 }
 
 .logo {
@@ -148,7 +152,7 @@ header .container {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   color: var(--primary-brand);
-  margin-right: 72px;
+  margin-right: 76px;
 }
 .web_logo {
   color: var(--dark);
@@ -160,6 +164,10 @@ header .container {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+}
+
+.nav-list-items {
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -178,8 +186,7 @@ header .container {
 /* Адресса  */
 .header-navigation-address {
   font-style: normal;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  align-items: center;
 }
 
 .address-list {
@@ -187,6 +194,10 @@ header .container {
   gap: 40px;
   justify-content: right;
   flex-wrap: wrap;
+}
+
+.address-list-items {
+  padding: 24px 0;
 }
 
 .header-navigation-address .connect {
@@ -212,7 +223,7 @@ header .container {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  width: 496px;
+  max-width: 496px;
 }
 
 .hero {
@@ -243,12 +254,13 @@ header .container {
   border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 169px;
   margin-top: 48px;
+  cursor: pointer;
 }
 
 .main_button:focus,
 .main_button:hover {
-  cursor: pointer;
   background: var(--pressed-state);
 }
 
@@ -260,12 +272,12 @@ header .container {
   justify-content: center;
 }
 
-.discription-list li {
+.discription-list-items {
   min-width: 264px;
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.discription-list-img li {
+.discription-list-img-list {
   flex-basis: calc((100% - 48px) / 3);
 }
 
@@ -285,6 +297,7 @@ header .container {
 
 .team-cards {
   max-width: 264px;
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-cards-list {
@@ -300,11 +313,10 @@ header .container {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 .team-cards-text {
-  margin: 32px 44px;
+  padding: 32px 16px;
 }
 
 /* футер */
@@ -323,11 +335,15 @@ header .container {
   letter-spacing: 0.32px;
   color: var(--light);
   width: 264px;
-  margin-top: 16px;
 }
 
 .white_logo {
   color: var(--light);
+}
+
+.logo-bottom {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* кнопки з portfolio.html */
@@ -356,11 +372,12 @@ header .container {
 .nav-buttons:focus {
   color: var(--white);
   background-color: var(--pressed-state);
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
 /* секція з картинками на partfolio.html */
-.images-block-1 {
+.images-block-big {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
@@ -368,23 +385,24 @@ header .container {
   justify-content: center;
 }
 
-.images-block-1 li {
-  border: 1px solid var(--accent);
+.images-block-big-list {
+  max-width: 360px;
   background: var(--white);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
-.images-block-1 a {
+.images-block-big a {
   text-decoration: none;
-  flex-basis: calc((100% - 32px) / 3);
 }
 
-.images-block-1-text {
-  margin: 32px 16px;
+.images-block-big-text {
+  padding: 32px 16px;
+  border: 1px solid var(--accent);
 }
 
 .images_section_portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 96px 120px;
+  width: 1158px;
 }
 
 .images_section_portfolio p {
