@@ -32,8 +32,9 @@
   padding: 120px 0;
 }
 
-.section-b {
-  padding-bottom: 0;
+.section-c {
+  padding-top: 0;
+  padding-bottom: 120px;
 }
 
 h1,
